@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  
+</head>
+<body>
+  <header>
+    <img src="images/header.png" width="1350" height="70" alt="MAkeSurvey">     
+  </header>
+ <div id="crletsStart" class="container"width="1170" height="500" style="margin-top:10px; margin-bottom:5px">
+<img src="images/makeyoursurvey.jpg" width="1140" height="480"style="margin-top:10px; margin-bottom: 10px ">
+<button id="btnLetsStart" class="btn btn-danger btn-block" style="margin-top:10px; margin-bottom:10px">Haydi Başlayalım</button>
+
+ </div>
+    <div id="crStart"class="container" width="1170" height="500" style="margin-top:10px; margin-bottom: 10px">  
+      <div class="row">
+        <div class="col-md-4" style="margin-top:20px; margin-bottom: 20px">
+          <div id="bTF" class="alert alert-warning">
+            <h3>Evet/Hayır Anketi İstiyorum</h3>              
+            <p> 
+                <img src="images/survey1.png"  alt="surveyYesNo">                               
+                  <button id="btnTF" class="btn btn-primary btn-block">Seç</button>              
+              </p>          
+        </div>
+        </div>        
+        
+        <div class="col-md-4" style="margin-top:20px; margin-bottom: 20px">    
+            <div id="bV" class="alert alert-danger" >       
+                <h3>Puanlama Anketi İstiyorum</h3> 
+                <p>
+                    <img src="images/survey2.png"  alt="surveyMyself"> 
+                  <button id="btnV" class="btn btn-primary btn-block">Seç</button> 
+               </p>  
+        </div> 
+        </div>   
+        
+        <div class="col-md-4" style="margin-top:20px; margin-bottom: 20px">
+            <div id="bPI" class="alert alert-success">   
+            <h3>Kendim Hazırlamak İstiyorum</h3> 
+            <p>
+                <img src="images/survey3.png"  alt="surveyPersonal">                 
+              <button id="btnPI" class="btn btn-primary btn-block">Seç</button> 
+            </p>
+      </div>
+    </div>
+     </div>
+	 </div>
+	 <div id="crForm" class="container" style="margin-top:10px; margin-bottom: 10px">
+      <div class="row">
+        <div class="col-md-12">
+            <div id="pTrueFalse" class="alert alert-warning">
+              <label>Soru Oluştur</label>
+              <input type="text" id="txtTF1" class="form-control"><br/>              
+              <hr>
+              <label>Soru Oluştur</label>
+              <input type="text" id="txtTF2" class="form-control"><br/>              
+              <hr>
+              <label>Soru Oluştur</label>
+              <input type="text" id="txtTF3" class="form-control"><br/>             
+              <hr>
+              <label>Soru Oluştur</label>
+              <input type="text" id="txtTF4" class="form-control"><br/>              
+              <hr>
+              <label>Soru Oluştur</label>
+              <input type="text" id="txtTF5" class="form-control"><br/>             
+              <hr>
+              <label>Soru Oluştur</label>
+              <input type="text" id="txtTF6" class="form-control"><br/>              
+              <hr>        
+              <button id="btnView1" class="btn btn-danger btn-lg">Görüntüle</button> 
+              <button id="btnChange1" class="btn btn-success btn-lg">Farklı Bir Anket Seç</button>           
+          </div>
+      </div>
+      <br/>
+    </div>   
+    <div class="row">
+        <div class="col-md-12">
+            <div id="pValue" class="alert alert-danger">
+              <label>Soru Oluştur</label>
+              <input type="text" id="txtValue1" class="form-control"></br> 
+               
+              <hr>    
+              <label>Soru Oluştur</label>
+              <input type="text" id="txtValue2" class="form-control"></br>
+               
+              <hr>         
+              <label>Soru Oluştur</label>
+              <input type="text" id="txtValue3" class="form-control"></br>
+              
+              <hr>
+              <label>Soru Oluştur</label>
+              <input type="text" id="txtValue4" class="form-control"></br>
+              
+              <hr>
+              <label>Soru Oluştur</label>
+              <input type="text" id="txtValue5" class="form-control"></br>
+              
+              <hr>
+              <label>Soru Oluştur</label>
+              <input type="text" id="txtValue6" class="form-control"><br/>
+              
+              <hr>
+              <button id="btnView2" class="btn btn-danger btn-lg">Görüntüle</button> 
+              <button id="btnChange2" class="btn btn-success btn-lg">Farklı Bir Anket Seç</button>           
+          </div>
+      </div>
+      <br/>
+    </div>
+	<div class="row">
+        <div class="col-md-12">
+            <div id="pPersonal" class="alert alert-success">
+              <label>Soru Oluştur</label>
+              <input type="text" id="txtP1" class="form-control"><br/>
+             
+              <hr>
+              <label>Soru Oluştur</label>
+              <input type="text" id="txtP2" class="form-control"><br/>
+             
+             
+              <hr>
+              <label>Soru Oluştur</label>
+              <input type="text" id="txtP3" class="form-control"><br/>
+             
+              
+              <hr>
+              <label>Soru Oluştur</label>
+              <input type="text" id="txtP4" class="form-control"><br/>
+             
+              <hr>
+              <label>Soru Oluştur</label>
+              <input type="text" id="txtP5" class="form-control"><br/>
+              
+              <hr>
+              <label>Soru Oluştur</label>
+              <input type="text" id="txtP6" class="form-control"><br/>
+             
+              <hr>   
+              <button id="btnView3" class="btn btn-danger btn-lg" >Görüntüle</button> 
+              <button id="btnChange3" class="btn btn-success btn-lg">Farklı Bir Anket Seç</button>           
+          </div>
+      </div>
+      <br/>
+    </div>
+   
+    </div>
+    <div id="crSurvey"class="container" style="margin-top:2px;">     
+   
+    <div class="row">
+        <div class="col-md-12">
+            <div id="surveyTF" class="alert alert-warning">
+              <label>Soru : </label><br/>
+              <label id="lblTFanswer1"></label> <br/>             
+              
+              <label>Bir Tane Seçiniz</label></br>
+              <input type="radio" id="rbYes">Evet</input>
+              <input type="radio" id="rbNo">Hayır</input>
+              <br/> 
+              <hr>
+              <label>Soru : </label><br/>
+              <label id="lblTFanswer2"></label> <br/>                
+             
+              <label>Bir Tane Seçiniz</label></br>
+              <input type="radio" id="rbYes">Evet</input>
+              <input type="radio" id="rbNo">Hayır</input>
+              <br/> 
+              <hr>
+              <label>Soru : </label><br/>
+              <label id="lblTFanswer3"></label> <br/>                
+             
+              <label>Bir Tane Seçiniz</label></br>
+              <input type="radio" id="rbYes">Evet</input>
+              <input type="radio" id="rbNo">Hayır</input>
+              <br/>  
+              <hr>
+              <label>Soru : </label><br/>
+              <label id="lblTFanswer4"></label> <br/>   
+              
+              <label>Bir Tane Seçiniz</label></br>
+              <input type="radio" id="rbYes">Evet</input>
+              <input type="radio" id="rbNo">Hayır</input>
+              <br/> 
+              <hr>
+              <label>Soru : </label><br/>
+              <label id="lblTFanswer5"></label> <br/>   
+              
+              <label>Bir Tane Seçiniz</label></br>
+              <input type="radio" id="rbYes">Evet</input>
+              <input type="radio" id="rbNo">Hayır</input>
+              <br/> 
+              <hr>
+              <label>Soru : </label><br/>
+              <label id="lblTFanswer6"></label> <br/>   
+             
+              <label>Bir Tane Seçiniz</label></br>
+              <input type="radio" id="rbYes">Evet</input>
+              <input type="radio" id="rbNo">Hayır</input>
+              <br/> 
+              <hr> 
+              <button id="btnEditTrueFalse" class="btn btn-primary btn-block">Düzenle</button>
+              <button id="btnSendWordTrueFalse" class="btn btn-warning btn-block">Anketi Dosya Olarak Oluştur</button> 
+              <button id="btnSendLinkTrueFalse" class="btn btn-info btn-block">Anketi Link Olarak Oluştur</button>  
+          </div>
+      </div>
+      <br/>
+    </div>
+	
+	<div class="row">
+        <div class="col-md-12">
+            <div id="surveyValue" class="alert alert-danger">
+              <label>Soru : </label><br/>
+              <label id="lblVanswer1"></label> <br/>                           
+              <label>Bir Tane Seçiniz : </label></br>            
+              <input type="radio" id="rbWorst">Çok Kötü</input>
+              <input type="radio" id="rbNotGood">Kötü</input>
+              <input type="radio" id="rbBetter">Geliştirilmeli</input>      
+              <input type="radio" id="rbGood">İyi</input>
+              <input type="radio" id="rbPerfect">Çok İyi</input> <br/>             
+              <hr>
+              <label>Soru : </label><br/>
+              <label id="lblVanswer2"></label> <br/>                
+              <label>Bir Tane Seçiniz : </label></br>            
+              <input type="radio" id="rbWorst">Çok Kötü</input>
+              <input type="radio" id="rbNotGood">Kötü</input>
+              <input type="radio" id="rbBetter">Geliştirilmeli</input>      
+              <input type="radio" id="rbGood">İyi</input>
+              <input type="radio" id="rbPerfect">Çok İyi</input> <br/> 
+              <hr>
+              <label>Soru : </label><br/>
+              <label id="lblVanswer3"></label> <br/>                
+              <label>Bir Tane Seçiniz : </label></br>            
+              <input type="radio" id="rbWorst">Çok Kötü</input>
+              <input type="radio" id="rbNotGood">Kötü</input>
+              <input type="radio" id="rbBetter">Geliştirilmeli</input>      
+              <input type="radio" id="rbGood">İyi</input>
+              <input type="radio" id="rbPerfect">Çok İyi</input> <br/> 
+              <hr>
+              <label>Soru : </label><br/>
+              <label id="lblVanswer4"></label> <br/>   
+              <label>Bir Tane Seçiniz : </label></br>            
+              <input type="radio" id="rbWorst">Çok Kötü</input>
+              <input type="radio" id="rbNotGood">Kötü</input>
+              <input type="radio" id="rbBetter">Geliştirilmeli</input>      
+              <input type="radio" id="rbGood">İyi</input>
+              <input type="radio" id="rbPerfect">Çok İyi</input> <br/> 
+              <hr>
+              <label>Soru : </label><br/>
+              <label id="lblVanswer5"></label> <br/>   
+             <label>Bir Tane Seçiniz : </label></br>            
+              <input type="radio" id="rbWorst">Çok Kötü</input>
+              <input type="radio" id="rbNotGood">Kötü</input>
+              <input type="radio" id="rbBetter">Geliştirilmeli</input>      
+              <input type="radio" id="rbGood">İyi</input>
+              <input type="radio" id="rbPerfect">Çok İyi</input> <br/>  
+              <hr>
+              <label>Soru : </label><br/>
+              <label id="lblVanswer6"></label> <br/>   
+             <label>Bir Tane Seçiniz : </label></br>            
+             <input type="radio" id="rbWorst">Çok Kötü</input>
+              <input type="radio" id="rbNotGood">Kötü</input>
+              <input type="radio" id="rbBetter">Geliştirilmeli</input>      
+              <input type="radio" id="rbGood">İyi</input>
+              <input type="radio" id="rbPerfect">Çok İyi</input> <br/> 
+              <hr> 
+              <button id="btnEditValue" class="btn btn-primary btn-block">Düzenle</button>
+              <button id="btnSendWordValue" class="btn btn-warning btn-block">Anketi Dosya Olarak Oluştur</button> 
+              <button id="btnSendLinkValue" class="btn btn-info btn-block">Anketi Link Olarak Oluştur</button>                      
+          </div>
+      </div>
+      <br/>
+    </div>
+	
+	<div class="row">
+        <div class="col-md-12">
+            <div id="surveyPersonal" class="alert alert-success">
+              <label>Soru : </label><br/>
+              <label id="lblPanswer1"></label> <br/>             
+              <label>Cevap : </label></br>
+              <input type="text" id="answer" class="form-control" >
+              <br/> 
+              <hr>
+              <label>Soru : </label><br/>
+              <label id="lblPanswer2"></label> <br/>                
+              <label>Cevap : </label></br>
+              <input type="text" id="answer" class="form-control">
+              <br/> 
+              <hr>
+              <label>Soru : </label><br/>
+              <label id="lblPanswer3"></label> <br/>                
+              <label>Cevap : </label></br>
+              <input type="text" id="answer" class="form-control">
+              <br/>  
+              <hr>
+              <label>Soru : </label><br/>
+              <label id="lblPanswer4"></label> <br/>   
+              <label>Cevap : </label></br>
+              <input type="text" id="answer" class="form-control">
+              <br/> 
+              <hr>
+              <label>Soru : </label><br/>
+              <label id="lblPanswer5"></label> <br/>   
+              <label>Cevap : </label></br>
+              <input type="text" id="answer" class="form-control">
+              <br/> 
+              <hr>
+              <label>Soru : </label><br/>
+              <label id="lblPanswer6"></label> <br/>   
+              <label>Cevap : </label></br>
+              <input type="text" id="answer" class="form-control">
+              <br/> 
+              <hr> 
+              <button id="btnEditPersonal" class="btn btn-primary btn-block">Düzenle</button>
+              <button id="btnSendWordPersonal" class="btn btn-warning btn-block">Anketi Dosya Olarak Oluştur</button> 
+              <button id="btnSendLinkPersonal" class="btn btn-info btn-block">Anketi Link Olarak Oluştur</button>                         
+          </div>
+      </div>
+      <br/>
+    </div>
+    </div>
+  
+     <script src="js/jquery-3.2.1.min.js"></script>          
+    
+  <script>
+    $(function () {  
+      $("#crSurvey").hide();
+      $("#crStart").hide();
+      $("#crForm").hide(); 
+
+      $("#btnLetsStart").click(function(){
+       $("#crletsStart").slideUp(1000);
+        $("#crStart").slideDown(1000);
+      });    
+     
+
+      $("#btnView1").click(function(){
+        $("#crSurvey").show();
+        var tF1= $("#txtTF1").val();
+        $("#lblTFanswer1").append(tF1); 
+        var tF2= $("#txtTF2").val();
+        $("#lblTFanswer2").append(tF2); 
+        var tF3= $("#txtTF3").val();
+        $("#lblTFanswer3").append(tF3);      
+        var tF4= $("#txtTF4").val();
+        $("#lblTFanswer4").append(tF4);         
+        var tF5= $("#txtTF5").val();
+        $("#lblTFanswer5").append(tF5);          
+        var tF6= $("#txtTF6").val();
+        $("#lblTFanswer6").append(tF6); 
+      });
+
+      $("#btnView3").click(function(){
+        $("#crSurvey").show();
+        var personal1= $("#txtP1").val();
+        $("#lblPanswer1").append(personal1);        
+        var personal2= $("#txtP2").val();
+        $("#lblPanswer2").append(personal2); 
+        var personal3= $("#txtP3").val();
+        $("#lblPanswer3").append(personal3); 
+        var personal4= $("#txtP4").val();
+        $("#lblPanswer4").append(personal4);    
+        var personal5= $("#txtP5").val();
+        $("#lblPanswer5").append(personal5);     
+        var personal6= $("#txtP6").val();
+        $("#lblPanswer6").append(personal6); 
+      });
+
+      $("#btnView2").click(function(){
+        $("#crSurvey").show();
+        var value1= $("#txtValue1").val();
+        $("#lblVanswer1").append(value1); 
+        var value2= $("#txtValue2").val();
+        $("#lblVanswer2").append(value2); 
+        var value3= $("#txtValue3").val();
+        $("#lblVanswer3").append(value3); 
+        var value4= $("#txtValue4").val();
+        $("#lblVanswer4").append(value4); 
+        var value5= $("#txtValue5").val();
+        $("#lblVanswer5").append(value5); 
+        var value6= $("#txtValue6").val();
+        $("#lblVanswer6").append(value6); 
+      });
+
+    $("#btnTF").click(function() {
+      $("#crForm").show();
+      $("#bTF").slideUp(1000);
+      $("#bV").slideUp(1000);
+      $("#bPI").slideUp(1000);
+      $("#pTrueFalse").slideDown(1000);
+      $("#pValue").slideUp(1000);
+      $("#pPersonal").slideUp(1000);
+      $("#surveyPersonal").slideUp(1000);
+      $("#surveyValue").slideUp(1000);
+      $("#surveyTF").slideUp(1000);
+      return false;
+    	});
+
+      $("#btnV").click(function(){
+      $("#crForm").show();
+      $("#bTF").slideUp(1000);
+      $("#bV").slideUp(1000);
+      $("#bPI").slideUp(1000);
+      $("#pTrueFalse").slideUp(1000);
+      $("#pValue").slideDown(1000);
+      $("#pPersonal").slideUp(1000);
+      $("#surveyPersonal").slideUp(1000);
+      $("#surveyValue").slideUp(1000);
+      $("#surveyTF").slideUp(1000);
+      return false;
+      });
+
+      $("#btnPI").click(function(){
+       $("#crForm").show();
+      $("#bTF").slideUp(1000);
+      $("#bV").slideUp(1000);
+      $("#bPI").slideUp(1000);
+      $("#pTrueFalse").slideUp(1000);
+      $("#pValue").slideUp(1000);
+      $("#pPersonal").slideDown(1000);
+      $("#surveyPersonal").slideUp(1000);
+      $("#surveyValue").slideUp(1000);
+      $("#surveyTF").slideUp(1000);
+      return false;
+     
+      });
+
+      $("#btnChange1").click(function(){
+      $("#bTF").slideDown(1000);
+      $("#bV").slideDown(1000);
+      $("#bPI").slideDown(1000);
+      $("#pTrueFalse").slideUp(1000);
+      $("#pPersonal").slideUp(1000);
+      $("#pValue").slideUp(1000);
+      $("#surveyPersonal").slideUp(1000);
+      $("#surveyValue").slideUp(1000);
+      $("#surveyTF").slideUp(1000);
+      $("input:text, form-control").val("");
+      
+      return false;
+    	});
+
+      $("#btnChange2").click(function(){
+      $("#bTF").slideDown(1000);
+      $("#bV").slideDown(1000);
+      $("#bPI").slideDown(1000);
+      $("#pTrueFalse").slideUp(1000);
+      $("#pPersonal").slideUp(1000);
+      $("#pValue").slideUp(1000);
+      $("#surveyPersonal").slideUp(1000);
+      $("#surveyValue").slideUp(1000);
+      $("#surveyTF").slideUp(1000);
+      $("input:text, form-control").val("");
+      
+     return false;
+    	});
+
+      $("#btnChange3").click(function(){
+      $("#bTF").slideDown(1000);
+      $("#bV").slideDown(1000);
+      $("#bPI").slideDown(1000);
+      $("#pTrueFalse").slideUp(1000);
+      $("#pPersonal").slideUp(1000);
+      $("#pValue").slideUp(1000);
+      $("#surveyPersonal").slideUp(1000);
+      $("#surveyValue").slideUp(1000);
+      $("#surveyTF").slideUp(1000);
+      $("input:text, form-control").val("");
+   
+      return false;
+    	});
+
+      $("#btnView1").click(function(){
+       $("#bTF").slideDown(1000);
+       $("#bV").slideDown(1000);
+       $("#bPI").slideDown(1000);
+       $("#pTrueFalse").slideUp(1000);
+       $("#surveyTF").slideDown(1000);
+       $("#surveyPersonal").slideUp(1000);
+       $("#surveyValue").slideUp(1000);
+       return false;
+        });
+
+      $("#btnView3").click(function(){
+      $("#bTF").slideDown(1000);
+      $("#bV").slideDown(1000);
+      $("#bPI").slideDown(1000);
+      $("#pPersonal").slideUp(1000);
+      $("#surveyPersonal").slideDown(1000);
+      $("#surveyRF").slideUp(1000);
+      $("#surveyValue").slideUp(1000);
+      return false;
+      });
+
+
+      $("#btnView2").click(function(){
+      $("#bTF").slideDown(1000);
+      $("#bV").slideDown(1000);
+      $("#bPI").slideDown(1000);
+      $("#pValue").slideUp(1000);
+      $("#surveyValue").slideDown(1000);
+      $("#surveyPersonal").slideUp(1000);
+      $("#surveyTF").slideUp(1000);
+      return false;
+      });
+
+      $("#btnEditPersonal").click(function(){
+      $("#crSurvey").hide();
+      $("#surveyPersonal").slideUp(1000);
+      $("#pPersonal").slideDown(1000);
+      });
+
+      $("#btnEditValue").click(function(){   
+      $("#crSurvey").hide();
+      $("#surveyValue").slideUp(1000);
+      $("#pValue").slideDown(1000);
+      });
+
+      $("#btnEditTrueFalse").click(function(){       
+      $("#crSurvey").hide();
+      $("#surveyTF").slideUp(1000);
+      $("#pTrueFalse").slideDown(1000);
+      });
+
+
+  });
+  </script>  
+  </body>
+</html>
